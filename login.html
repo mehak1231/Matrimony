@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page shaadi.com</title>
+    <style>
+        body{
+            background-image: linear-gradient(56deg, gold,brown,silver);
+            background-repeat: no-repeat;
+            height: 98vh;
+        }
+        .box {
+            border: 2px solid rgb(166, 151, 151);
+            border-radius: 6px;
+            width: 25vw;
+            height: auto;
+            background-color: white;
+            justify-content: center;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            /* margin-left: -5px;
+            margin-right: -5px; */
+            z-index: 10000;
+            margin-left: 550px;
+        }
+
+        .login_header img {
+            margin: 9px auto 10px;
+            height: 45px;
+            width: 45px;
+        }
+
+        .login_header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: auto;
+            text-align: center;
+            font-weight: 400;
+        }
+        .info{
+            margin: 35px;
+        }
+        form{
+            width: 300px;
+        }
+        form label{
+            display: flex;
+            font-size: 18px;
+            font-family: 'Roboto',sans-serif;
+        }
+        .input{
+            width: 100%;
+            height: 32px;
+            border: 1px solid rgb(172, 169, 169);
+            border-radius: 4px;
+        }
+        .details{
+            padding: 0 5px;
+            margin-bottom: 20px !important;
+            position: relative;
+            width: 100%;
+            text-align: left;
+        }
+        .check {
+            display: inline-flex;
+            
+        }
+        a{
+            color: rgb(213, 153, 0);
+            display: flex;
+        }
+        .btn{
+            margin: 18px auto 0;
+            height: 40px;
+            width: 100%;
+            display: block;
+            background-color: #d58300;
+            color: white;
+            border: 1px solid white;
+            border-radius: 6px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn:hover{
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            background-color: #e9a73e;
+        }
+        p{
+            text-align: center;
+            margin: 10px auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .separator{
+            text-align: center;
+            margin-top: 8px;
+        }
+        .sign{
+            text-align: center;
+            justify-content: center;
+            margin: 5px auto;
+        }
+        .sign:hover{
+            color: #efcf5c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="login_header">
+            <img src="login_logo.png" alt="Login to shaadi.com">
+            <h5>Shaadi.com</h5>
+            <h4>Welcome back! Please Login</h4>
+        </div>
+        <div class="info">
+            <form action="">
+                <div class="details">
+                    <label for="no.">Mobile No. / Email ID</label>
+                    <input class="input" type="text" name="ID" id="no." placeholder="Enter Mobile no./ Email ID">
+                </div>
+                <div class="details">
+                    <label for="pass">Password</label>
+                    <input class="input" type="text" name="pass" id="pass" placeholder="Enter password">
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="autologin" value="" checked="">
+                    <label for="">Stay Logged in ?</label>
+                </div>
+                <a href="#">Forget Password?</a>
+                <button class="btn" type="submit">Login</button>
+                <div class="separator">
+                    <span> <hr>OR <hr></span>
+                </div>
+                <button class="btn" type="submit">Login with OTP</button>
+                <p>New to Shaadi?<a class="sign" href="#"> <b>Sign Up Free</b> </a></p>
+                <a href="index.html">Go back</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
